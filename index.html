@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meu Portfólio</title>
+  <style>
+    :root {
+      --musgo: #556b2f;
+      --musgo-claro: #6e8b3d;
+      --preto: #121212;
+      --cinza: #2a2a2a;
+      --branco: #f2f2f2;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--preto);
+      color: var(--branco);
+    }
+
+    header {
+      padding: 20px 40px;
+      background-color: var(--cinza);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      color: var(--branco);
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    .hero {
+      padding: 80px 40px;
+      text-align: center;
+      background: linear-gradient(to right, var(--preto), var(--cinza));
+    }
+
+    .hero h1 {
+      font-size: 3em;
+      color: var(--musgo);
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      color: var(--branco);
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .cta-btn {
+      margin-top: 30px;
+      background-color: var(--musgo);
+      color: var(--branco);
+      padding: 15px 30px;
+      border: none;
+      font-size: 1em;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .section {
+      padding: 60px 40px;
+    }
+
+    .section h2 {
+      text-align: center;
+      color: var(--musgo);
+      margin-bottom: 40px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background-color: var(--cinza);
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    .card h3 {
+      color: var(--musgo);
+    }
+
+    footer {
+      padding: 40px;
+      background-color: var(--cinza);
+      text-align: center;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div><strong>MeuPortfólio</strong></div>
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#trabalhos">Trabalhos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Seu nome aqui</h1>
+    <p>Transformando ideias em realidade com design criativo, moderno e profissional.</p>
+    <button class="cta-btn">Entre em contato</button>
+  </section>
+
+  <section id="sobre" class="section">
+    <h2>Sobre Mim</h2>
+    <p style="text-align: center; max-width: 800px; margin: 0 auto;">
+      Sou uma criadora apaixonada por design, arte e criatividade. Trabalho com projetos que misturam estética e funcionalidade.
+    </p>
+  </section>
+
+  <section id="trabalhos" class="section">
+    <h2>Meus Trabalhos</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Projeto 1</h3>
+        <p>Descrição breve do projeto.</p>
+      </div>
+      <div class="card">
+        <h3>Projeto 2</h3>
+        <p>Descrição breve do projeto.</p>
+      </div>
+      <div class="card">
+        <h3>Projeto 3</h3>
+        <p>Descrição breve do projeto.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" class="section">
+    <h2>Contato</h2>
+    <p style="text-align: center;">
+      Me chama no <a href="https://wa.me/SEUNUMEROAQUI" style="color: var(--musgo); font-weight: bold;">WhatsApp</a> ou me manda um e-mail em <strong>teuemail@email.com</strong>
+    </p>
+  </section>
+
+  <footer>
+    &copy; 2025 - Todos os direitos reservados.
+  </footer>
+</body>
+</html>
